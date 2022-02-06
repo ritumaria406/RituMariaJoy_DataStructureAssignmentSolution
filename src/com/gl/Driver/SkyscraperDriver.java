@@ -21,9 +21,11 @@ public class SkyscraperDriver {
 				System.out.println("enter the floor size given on day :"+ (i+1));
 				floorsPerDay.add(sc.nextInt()); 
 			}		
-			
+			if(numberOfFloors > 0)
+			{
 			System.out.println("The order of construction is as follows");
 			Skyscraper.Logic(floorsPerDay);
+			}
 		}
 
 	
