@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class Skyscraper {
 	
 	public static void Logic(LinkedList<Integer> ab) {
-		// TODO Auto-generated method stub		 
+		// Logic for Skyscrapper and the order in which floors are added 
 			
 			int ValueToSearch = ab.size();
 			int day = 1;

@@ -2,6 +2,11 @@ package com.gl.Driver;
 
 
 public class MncTransactionsDriver {
+	
+	public static Node node;
+	static Node prevNode = null;
+	static Node headNode = null;
+	
 	static class Node {
 		int key, height;
 		Node left, right;
@@ -15,13 +20,9 @@ public class MncTransactionsDriver {
 			temp.left = null;
 			temp.right = null;
 			return temp;
-		}   
-		
+		} 
 	
 	
-	public static Node node;
-	static Node prevNode = null;
-	static Node headNode = null;
 
 	// Function to convert to right skewed tree	
 	static void RightSkewedTree(Node root)	
@@ -69,7 +70,8 @@ public class MncTransactionsDriver {
 	// Driver Code
 	public static void main (String[] args)
 	{
-
+		
+		// Create a tree
 		Node root = newNode(50);		
 		root.left = newNode(30);
 		root.right = newNode(60);
